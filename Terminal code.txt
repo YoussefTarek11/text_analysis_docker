@@ -1,0 +1,30 @@
+ PS C:\Users\youss\Desktop\text_analysis> docker build --pull --rm -f "Dockerfile" -t text_processor "."
+_________________________________________________________
+ PS C:\Users\youss\Desktop\text_analysis> docker images
+REPOSITORY                 TAG       IMAGE ID       CREATED        SIZE  
+text_processor             latest    a9130f8abaf8   3 hours ago    160MB 
+________________________________________________________________________
+ PS C:\Users\youss\Desktop\text_analysis> docker run text_processor 
+ [nltk_data] Downloading package stopwords to /root/nltk_data...
+[nltk_data]   Unzipping corpora/stopwords.zip.
+Top 20 Most Frequent Words:
+also: 3269
+first: 2912
+new: 2612
+one: 2442
+two: 2107
+help: 1697
+it.: 1639
+article: 1607
+national: 1571
+expanding: 1513
+wikipedia: 1503
+stub.: 1492
+may: 1437
+united: 1384
+school: 1356
+university: 1346
+film: 1227
+american: 1211
+world: 1128
+used: 1126
